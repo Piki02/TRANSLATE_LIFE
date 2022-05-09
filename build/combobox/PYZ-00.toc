@@ -879,17 +879,17 @@
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\multiprocessing\\__init__.py',
    'PYMODULE'),
-  ('stringprep',
+  ('_py_abc',
    'C:\\Users\\Fredy '
-   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
+   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
    'PYMODULE'),
   ('tracemalloc',
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
    'PYMODULE'),
-  ('_py_abc',
+  ('stringprep',
    'C:\\Users\\Fredy '
-   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
+   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
    'PYMODULE'),
   ('webbrowser',
    'C:\\Users\\Fredy '

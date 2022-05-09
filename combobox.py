@@ -30,16 +30,9 @@ def clear():
         t1.delete(1.0,'end')
         t2.delete(1.0,'end')
 
-#img = ImageTk.PhotoImage(Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/fioondo.gif'))
-#panel = tk.Label(root, image = img)
-#panel.pack(fill = "both", expand = "yes")
-
-img = ImageTk.PhotoImage(Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/azul.gif'))
+img = ImageTk.PhotoImage(Image.open('azul.gif'))
 panel = tk.Label(root, image = img)
 panel.pack(fill = "both", expand = "yes")
-
-#img2 = ImageTk.PhotoImage(Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/blabla.gif'))
-#panel2 = tk.Label(root, image = img2).place(x=485, y=0)
 
 a = tk.StringVar() 
 auto_detect = ttk.Combobox(root, width = 18, textvariable = a, state='readonly',font=('Bahnschrift SemiCondensed',16,'normal'),) 
@@ -200,28 +193,28 @@ clear.place(x=580,y=600)
 link = Button(root,text="Opiniones",relief=RIDGE,borderwidth=3,font=('Bahnschrift SemiCondensed',20,'normal'),cursor="hand2",command=link)
 link.place(x=855,y=600)
 
-banner = Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/banner.gif')
+banner = Image.open('banner.gif')
 banner = ImageTk.PhotoImage(banner)
 es = Button(root,relief=RIDGE,image=banner,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=pag)
 es.place(x=280,y=5)
 
 
-img1 = Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/espanol.gif')
+img1 = Image.open('espanol.gif')
 img1 = ImageTk.PhotoImage(img1)
 es = Button(root,relief=RIDGE,image=img1,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
 es.place(x=5,y=675)
 
-img2 = Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/ingles.gif')
+img2 = Image.open('ingles.gif')
 img2 = ImageTk.PhotoImage(img2)
 en = Button(root,relief=RIDGE,image=img2,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
 en.place(x=55,y=675)
 
-img3 = Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/japon.gif')
+img3 = Image.open('japon.gif')
 img3 = ImageTk.PhotoImage(img3)
 ja = Button(root,relief=RIDGE,image=img3,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
 ja.place(x=105,y=675)
 
-img4 = Image.open('C:/Users/Fredy Garcia/Desktop/TRADUCTOR/ruso.gif')
+img4 = Image.open('ruso.gif')
 img4 = ImageTk.PhotoImage(img4)
 ru = Button(root,relief=RIDGE,image=img4,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
 ru.place(x=155,y=675)

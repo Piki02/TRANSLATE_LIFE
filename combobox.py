@@ -1,3 +1,5 @@
+from os import path
+import os,sys
 from os import link
 from tkinter import *
 import tkinter as tk
@@ -13,6 +15,14 @@ root.geometry('1280x680')
 root.maxsize(1280,680)
 root.minsize(1280,680)
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def translate():
         language_1 = t1.get("1.0","end-1c")
@@ -30,7 +40,8 @@ def clear():
         t1.delete(1.0,'end')
         t2.delete(1.0,'end')
 
-img = ImageTk.PhotoImage(Image.open('azul.gif'))
+
+img = ImageTk.PhotoImage(Image.open('Fondo2.png'))
 panel = tk.Label(root, image = img)
 panel.pack(fill = "both", expand = "yes")
 
@@ -49,14 +60,14 @@ choose_langauge = ttk.Combobox(root, width = 18, textvariable = l, state='readon
   
 def link():
         webbrowser.open("http://127.0.0.1:8080/opiniones")
-def es():
-        webbrowser.open("http://127.0.0.1:8080/espanol")
+def espa():
+        webbrowser.open("https://drive.google.com/file/d/1HBhxlzTsGIi4bMSOBtyUCF7ICEAyhfDF/view?usp=sharing")
 def en():
-        webbrowser.open("http://127.0.0.1:8080/ingles")
+        webbrowser.open("https://drive.google.com/file/d/1S2KK_JO5StrSIe-jZabNItKcw8SMkeGG/view?usp=sharing")
 def ru():
-        webbrowser.open("http://127.0.0.1:8080/ruso")
+        webbrowser.open("https://drive.google.com/file/d/14MPQ63KB13gEDDaE2AY-2OOCbZ3Y195_/view?usp=sharing")
 def ja():
-        webbrowser.open("http://127.0.0.1:8080/japones")
+        webbrowser.open("https://drive.google.com/file/d/1QPTRN7LS84hC7jdGTaXJFPksVO1Rz4Kp/view?usp=sharing")
 def pag():
         webbrowser.open("http://127.0.0.1:8080/home")
 
@@ -112,7 +123,6 @@ choose_langauge['values'] = (
                         'Kannada',
                         'Kazakh',
                         'Khmer',
-                        'Kinyarwanda',
                         'Korean',
                         'Kurdish (kurmanji)',
                         'Kyrgyz',
@@ -191,30 +201,30 @@ clear.place(x=580,y=600)
 link = Button(root,text="Opiniones",relief=RIDGE,borderwidth=3,font=('Bahnschrift SemiCondensed',20,'normal'),cursor="hand2",command=link)
 link.place(x=855,y=600)
 
-banner = Image.open('banner.gif')
+banner = Image.open('banner.png')
 banner = ImageTk.PhotoImage(banner)
 es = Button(root,relief=RIDGE,image=banner,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=pag)
 es.place(x=280,y=5)
 
 
-img1 = Image.open('espanol.gif')
+img1 = Image.open('espanol.png')
 img1 = ImageTk.PhotoImage(img1)
-es = Button(root,relief=RIDGE,image=img1,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
-es.place(x=28,y=120)
+espa = Button(root,relief=RIDGE,image=img1,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=espa)
+espa.place(x=28,y=120)
 
-img2 = Image.open('ingles.gif')
+img2 = Image.open('ingles.png')
 img2 = ImageTk.PhotoImage(img2)
-en = Button(root,relief=RIDGE,image=img2,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
+en = Button(root,relief=RIDGE,image=img2,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=en)
 en.place(x=28,y=200)
 
-img3 = Image.open('japon.gif')
+img3 = Image.open('japon.png')
 img3 = ImageTk.PhotoImage(img3)
-ja = Button(root,relief=RIDGE,image=img3,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
+ja = Button(root,relief=RIDGE,image=img3,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=ja)
 ja.place(x=28,y=280)
 
-img4 = Image.open('ruso.gif')
+img4 = Image.open('ruso.png')
 img4 = ImageTk.PhotoImage(img4)
-ru = Button(root,relief=RIDGE,image=img4,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
+ru = Button(root,relief=RIDGE,image=img4,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=ru)
 ru.place(x=28,y=360)
 
 root.mainloop()

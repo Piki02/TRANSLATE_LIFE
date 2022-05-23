@@ -9,9 +9,9 @@ import webbrowser
 
 root = tk.Tk()
 root.title('Translate Life ')
-root.geometry('1280x720')
-root.maxsize(1280,720)
-root.minsize(1280,720)
+root.geometry('1280x680')
+root.maxsize(1280,680)
+root.minsize(1280,680)
 
 
 def translate():
@@ -76,7 +76,8 @@ choose_langauge['values'] = (
                         'Catalan',
                         'Cebuano',
                         'Chichewa',
-                        'Chinese',
+                        'Chinese (simplified)',
+                        'Chinese (traditional)',
                         'Corsican',
                         'Croatian',
                         'Czech',
@@ -113,7 +114,7 @@ choose_langauge['values'] = (
                         'Khmer',
                         'Kinyarwanda',
                         'Korean',
-                        'Kurdish',
+                        'Kurdish (kurmanji)',
                         'Kyrgyz',
                         'Lao',
                         'Latin',
@@ -128,9 +129,8 @@ choose_langauge['values'] = (
                         'Maori',
                         'Marathi',
                         'Mongolian',
-                        'Myanmar',
                         'Nepali',
-                        'Norwegian'
+                        'Norwegian',
                         'Odia',
                         'Pashto',
                         'Persian',
@@ -155,18 +155,16 @@ choose_langauge['values'] = (
                         'Swedish',
                         'Tajik',
                         'Tamil',
-                        'Tatar',
                         'Telugu',
                         'Thai',
                         'Turkish',
-                        'Turkmen',
                         'Ukrainian',
                         'Urdu',
                         'Uyghur',
                         'Uzbek',
                         'Vietnamese',
                         'Welsh',
-                        'Xhosa'
+                        'Xhosa',
                         'Yiddish',
                         'Yoruba',
                         'Zulu',
@@ -202,21 +200,21 @@ es.place(x=280,y=5)
 img1 = Image.open('espanol.gif')
 img1 = ImageTk.PhotoImage(img1)
 es = Button(root,relief=RIDGE,image=img1,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
-es.place(x=5,y=675)
+es.place(x=28,y=120)
 
 img2 = Image.open('ingles.gif')
 img2 = ImageTk.PhotoImage(img2)
 en = Button(root,relief=RIDGE,image=img2,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
-en.place(x=55,y=675)
+en.place(x=28,y=200)
 
 img3 = Image.open('japon.gif')
 img3 = ImageTk.PhotoImage(img3)
 ja = Button(root,relief=RIDGE,image=img3,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
-ja.place(x=105,y=675)
+ja.place(x=28,y=280)
 
 img4 = Image.open('ruso.gif')
 img4 = ImageTk.PhotoImage(img4)
 ru = Button(root,relief=RIDGE,image=img4,borderwidth=0,font=('Bahnschrift SemiCondensed',10,'normal'),cursor="hand2",command=es)
-ru.place(x=155,y=675)
+ru.place(x=28,y=360)
 
 root.mainloop()

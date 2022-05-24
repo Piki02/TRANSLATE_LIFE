@@ -35,10 +35,6 @@
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\argparse.py',
    'PYMODULE'),
-  ('textwrap',
-   'C:\\Users\\Fredy '
-   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\textwrap.py',
-   'PYMODULE'),
   ('shutil',
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\shutil.py',
@@ -879,10 +875,6 @@
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\multiprocessing\\__init__.py',
    'PYMODULE'),
-  ('stringprep',
-   'C:\\Users\\Fredy '
-   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
-   'PYMODULE'),
   ('tracemalloc',
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
@@ -890,6 +882,10 @@
   ('_py_abc',
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\Fredy '
+   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
    'PYMODULE'),
   ('webbrowser',
    'C:\\Users\\Fredy '
@@ -1922,6 +1918,10 @@
   ('tkinter.constants',
    'C:\\Users\\Fredy '
    'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\Fredy '
+   'Garcia\\AppData\\Local\\Programs\\Python\\Python310\\lib\\textwrap.py',
    'PYMODULE'),
   ('os',
    'C:\\Users\\Fredy '

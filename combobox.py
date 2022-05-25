@@ -55,17 +55,17 @@ l = tk.StringVar()
 choose_langauge = ttk.Combobox(root, width = 18, textvariable = l, state='readonly',font=('Bahnschrift SemiCondensed',16,'normal')) 
   
 def link():
-        webbrowser.open("http://127.0.0.1:8080/opiniones")
+        webbrowser.open("http://powerful-thicket-14740.herokuapp.com/ShowLogin")
 def espa():
-        webbrowser.open("https://drive.google.com/file/d/1HBhxlzTsGIi4bMSOBtyUCF7ICEAyhfDF/view?usp=sharing")
+        webbrowser.open("http://powerful-thicket-14740.herokuapp.com/MEspa")
 def en():
-        webbrowser.open("https://drive.google.com/file/d/1S2KK_JO5StrSIe-jZabNItKcw8SMkeGG/view?usp=sharing")
+        webbrowser.open("http://powerful-thicket-14740.herokuapp.com/MIngles")
 def ru():
-        webbrowser.open("https://drive.google.com/file/d/14MPQ63KB13gEDDaE2AY-2OOCbZ3Y195_/view?usp=sharing")
+        webbrowser.open("http://powerful-thicket-14740.herokuapp.com/MArab")
 def ja():
-        webbrowser.open("https://drive.google.com/file/d/1QPTRN7LS84hC7jdGTaXJFPksVO1Rz4Kp/view?usp=sharing")
+        webbrowser.open("http://powerful-thicket-14740.herokuapp.com/MJapo")
 def pag():
-        webbrowser.open("http://127.0.0.1:8080/home")
+        webbrowser.open("http://powerful-thicket-14740.herokuapp.com/")
 
 
 choose_langauge['values'] = (
